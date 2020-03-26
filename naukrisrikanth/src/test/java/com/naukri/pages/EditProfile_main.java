@@ -22,7 +22,7 @@ import org.openqa.selenium.support.ui.Wait;
 public class EditProfile_main {
 	static WebDriver driver;
 
-
+	// To launch Chrome browser
 	public void launchChrome()
 	{
 		System.setProperty("webdriver.chrome.driver","E:\\eclipse-workspace\\GITHUB\\SrikanthKomirelly844863_naukri\\naukrisrikanth\\src\\test\\resources\\driver\\chromedriver.exe");
@@ -30,7 +30,7 @@ public class EditProfile_main {
 		driver.manage().window().maximize();
 		driver.manage().timeouts().implicitlyWait(50, TimeUnit.SECONDS);
 	}
-
+	// To launch Url
 	public void url()
 	{
 		driver.get("https://www.naukri.com/");
@@ -64,6 +64,7 @@ public class EditProfile_main {
 		else
 			return false;
 	}
+	//To login Using Sendkeys
 	public void login() throws IOException, InterruptedException
 	{
 		for(int i=1;i<=1;i++)
